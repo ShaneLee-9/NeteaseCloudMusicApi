@@ -1,4 +1,24 @@
 # 更新日志
+### 3.41.2 | 2020.09.20
+- 更新`获取音乐 url`接口,未登录状态返回试听片段 [#897](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/897)
+
+### 3.41.1 | 2020.09.19
+- 新增`电台个性推荐接口` [#824](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/824)
+
+### 3.41.0 | 2020.09.19
+- 新增`精品歌单标签列表`接口 [#921](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/921)
+
+- 新增`用户等级信息`接口 [#929](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/929)
+
+- 增加新接口的 d.ts 文件,修复登录接口的 d.ts 的 countrycode 为非可选属性的错误
+
+### 3.40.1 | 2020.09.13
+- 更新 TypeScript 声明 [#928](https://github.com/Binaryify/NeteaseCloudMusicApi/pull/928)
+
+### 3.40.0 | 2020.09.12
+- 新增 TypeScript 声明文件 [#908](https://github.com/Binaryify/NeteaseCloudMusicApi/pull/908)
+- 更改随机 UA 相关逻辑[#922](https://github.com/Binaryify/NeteaseCloudMusicApi/pull/922)
+
 ### 3.39.0 | 2020.08.23
 - 新增`cloudsearch`接口[#893](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/893)
 - `mv 地址`接口修改分辨率参数 [#883](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/883)
