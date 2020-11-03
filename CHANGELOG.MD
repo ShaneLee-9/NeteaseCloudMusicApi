@@ -1,4 +1,46 @@
 # 更新日志
+### 3.45.3 | 2020.11.1
+- `相似歌手`,`首页-发现-圆形图标入口列表`接口增加匿名token[#877](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/877) [#988](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/988)
+
+- 修复`音乐 url`接口POST方式手动传入cookie报错问题 [#1005](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/1005)
+
+### 3.45.2 | 2020.10.26
+- 云贝完成任务接口增加`depositCode`参数
+
+### 3.45.1 | 2020.10.25
+- 修复代理配置失效的问题 [#992](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/992)
+
+- 修复新碟上架不返回周数据的问题,修复推荐新音乐接口返回数量问题,并添加limit参数支持 [#981](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/981)
+
+- 添加`云贝`相关接口 [#985](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/985)
+
+- 添加`用户账号信息`接口
+
+- 替换接口文件所有http url 为 https
+
+### 3.44.0 | 2020.10.17
+- 更新`电台详情`,`电台节目详情`接口 [#977](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/977)
+
+#### Breaking change
+- `电台详情`接口更新后数据结构有变化
+
+### 3.43.0 | 2020.10.16
+- 新增`电台订阅者列表`接口 [#971](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/971)
+
+### 3.42.4 | 2020.10.07
+- 修复新评论接口分页参数问题
+
+### 3.42.3 | 2020.10.05
+- 修复新评论接口分页参数问题
+
+### 3.42.2 | 2020.10.05
+- 更新歌单详情接口
+
+### 3.42.1 | 2020.10.04
+- 新增`用户绑定信息`,`用户绑定手机`,`新版评论`,`点赞过的视频`,`收藏视频到视频歌单`,`删除视频歌单里的视频`,`最近播放的视频`,`音乐日历`等接口
+
+- 创建歌单接口增加`type`参数,可创建视频歌单
+
 ### 3.41.2 | 2020.09.20
 - 更新`获取音乐 url`接口,未登录状态返回试听片段 [#897](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/897)
 
@@ -25,7 +67,7 @@
 - 修复新碟上架接口分页问题 [#892](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/892)
 
 ### 3.38.0 | 2020.08.09
-- 新增`歌曲楼层评论`,`歌手全部歌曲`接口 [#864](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/864) [#867](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/867)
+- 新增`楼层评论`,`歌手全部歌曲`接口 [#864](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/864) [#867](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/867)
 - 支持收藏VIP或付费歌曲到歌单 [#860](https://github.com/Binaryify/NeteaseCloudMusicApi/issues/860)
 - 支持手动传入`realIP` [#863](https://github.com/Binaryify/NeteaseCloudMusicApi/pull/863)
 
@@ -391,14 +433,14 @@
 
 ### 2.20.3 | 2018.09.26
 
-- 增加退出登陆接口
+- 增加退出登录接口
 - 修正 /check/music 的检查逻辑
 - 优化 Cookies 设置
 - 重构单元测试
 
   [by @nondanee](https://github.com/nondanee)
 
-- 增加 301 需要登陆提示信息
+- 增加 301 需要登录提示信息
 
 - 更新文档
 
