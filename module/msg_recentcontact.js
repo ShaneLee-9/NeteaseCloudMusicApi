@@ -1,12 +1,13 @@
-// 所有榜单介绍
+// 最近联系
 
 module.exports = (query, request) => {
+  const data = {}
   return request(
     'POST',
-    `https://music.163.com/api/toplist`,
-    {},
+    `https://music.163.com/api/msg/recentcontact/get`,
+    data,
     {
-      crypto: 'api',
+      crypto: 'weapi',
       cookie: query.cookie,
       proxy: query.proxy,
       realIP: query.realIP,

@@ -1,11 +1,12 @@
-// 云盘数据
+// 收藏的专栏
 
 module.exports = (query, request) => {
   const data = {
-    limit: query.limit || 30,
+    limit: query.limit || 50,
     offset: query.offset || 0,
+    total: true,
   }
-  return request('POST', `https://music.163.com/api/v1/cloud/get`, data, {
+  return request('POST', `https://music.163.com/api/topic/sublist`, data, {
     crypto: 'weapi',
     cookie: query.cookie,
     proxy: query.proxy,

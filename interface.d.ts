@@ -1307,3 +1307,89 @@ export function yunbei_task_finish(
     depositCode?: number | string
   } & RequestBaseConfig,
 ): Promise<Response>
+
+export function msg_recentcontact(params: RequestBaseConfig): Promise<Response>
+
+export function hug_comment(
+  params: {
+    uid: number | string
+    cid: number | string
+    sid: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function comment_hug_list(
+  params: {
+    page: number | string
+    cursor: number | string
+    idCursor: number | string
+    pageSize?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function topic_sublist(
+  params: {
+    limit?: number | string
+    offset?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function topic_sublist(
+  params: {
+    limit?: number | string
+    offset?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function artist_new_mv(
+  params: {
+    limit?: number | string
+    startTimestamp?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function artist_new_song(
+  params: {
+    limit?: number | string
+    startTimestamp?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function artist_detail(
+  params: {
+    id: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function cloud(params: RequestBaseConfig): Promise<Response>
+
+export function topic_detail(
+  params: {
+    actid?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function topic_detail_event_hot(
+  params: {
+    actid?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function login_qr_key(params: RequestBaseConfig): Promise<Response>
+
+export function login_qr_create(
+  params: {
+    key?: number | string
+    qrimg?: boolean | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function login_qr_check(
+  params: {
+    key?: number | string
+  } & RequestBaseConfig,
+): Promise<Response>
+
+export function playlist_detail_dynamic(
+  params: { id: string | number } & RequestBaseConfig,
+): Promise<Response>

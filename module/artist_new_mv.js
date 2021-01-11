@@ -1,20 +1,16 @@
-// 用户动态
-
 module.exports = (query, request) => {
   query.cookie.os = 'ios'
-  query.cookie.appver = '8.0.0'
+  query.cookie.appver = '8.0.00'
   const data = {
-    getcounts: true,
-    time: query.lasttime || -1,
-    limit: query.limit || 30,
-    total: false,
+    limit: query.limit || 20,
+    startTimestamp: query.before || Date.now(),
   }
   return request(
     'POST',
-    `https://music.163.com/api/event/get/${query.uid}`,
+    `https://music.163.com/api/sub/artist/new/works/mv/list`,
     data,
     {
-      crypto: 'api',
+      crypto: 'weapi',
       cookie: query.cookie,
       proxy: query.proxy,
       realIP: query.realIP,
